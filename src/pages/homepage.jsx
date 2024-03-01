@@ -33,7 +33,7 @@ export default function Homepage() {
       <div className="w-full h-full flex flex-col gap-5 items-center justify-center bg-transparent">
         <div className="flex flex-col gap-3 absolute w-full items-center justify-center">
           {/* <div className="grid gap-10 grid-cols-1 lg:grid-cols-2 px-5 w-full lg:w-[64rem]"> */}
-          <div className="flex gap-10 flex-wrap px-5 w-full lg:w-[64rem]">
+          <div className="flex gap-10 flex-wrap px-5 w-full lg:w-[67rem]">
             <div className="flex-1">
               <h1 className="text-left w-full text-white text-4xl font-semibold">ROAS Calculator</h1>
               <p className="text-white mt-2">Enter your cost of goods and selling price to find out your breakeven ROAS (hover over the “?” on each value to learn more)</p>
