@@ -4,8 +4,8 @@ import fileDownload from 'js-file-download';
 import loading from '../assets/loading.gif';
 
 export default function Homepage() {
-  const [cogs, setCogs] = useState(0);
-  const [sellingPrice, setSellingPrice] = useState(0);
+  const [cogs, setCogs] = useState(null);
+  const [sellingPrice, setSellingPrice] = useState(null);
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
