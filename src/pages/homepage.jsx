@@ -3,7 +3,7 @@ import axios from "axios";
 import fileDownload from 'js-file-download';
 import loading from '../assets/loading.gif';
 
-export default function Tiktok() {
+export default function Homepage() {
   const [cogs, setCogs] = useState(0);
   const [sellingPrice, setSellingPrice] = useState(0);
 
@@ -30,7 +30,7 @@ export default function Tiktok() {
 
   return (
     <>
-      <div className="w-full h-full flex flex-col gap-5 items-center justify-center bg-blue-700">
+      <div className="w-full h-full flex flex-col gap-5 items-center justify-center bg-transparent">
         <div className="flex flex-col gap-3 absolute w-full items-center justify-center">
           {/* <div className="grid gap-10 grid-cols-1 lg:grid-cols-2 px-5 w-full lg:w-[64rem]"> */}
           <div className="flex gap-10 flex-wrap px-5 w-full lg:w-[64rem]">
