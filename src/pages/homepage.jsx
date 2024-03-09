@@ -24,7 +24,7 @@ export default function Homepage() {
   }
 
   const calculateBreakEven = (cogs, sellingPrice) => {
-    var breakEvenQuantity = cogs > 0 ? cogs / (sellingPrice - cogs) : 0;
+    var breakEvenQuantity = cogs > 0 ? (cogs / (sellingPrice - cogs)) + 1 : 0;
     return breakEvenQuantity;
   }
 
@@ -97,7 +97,7 @@ export default function Homepage() {
                     {questionMarkTooltip("Break Even ROAS (Return On Ad Spent) is the number to know. This will tell you if your marketing is profitable or not.Your product profit margin is not 100%. The BE ROAS will be the determining number for profitability. As long as your ROAS is above B.E ROAS, you are profitable.")}
                   </p>
                   <div className="bg-[#4E8EE5] text-white text-center justify-center w-full bg-opacity-20 flex gap-5 rounded-lg py-3 px-5">
-                    {calculateBreakEven(cogs, sellingPrice).toFixed(2) + 1}
+                    {calculateBreakEven(cogs, sellingPrice).toFixed(2)}
                   </div>
                 </div>
               </div>
